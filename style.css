@@ -3,33 +3,39 @@ body {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-areas:
-        "header header"
         "nav nav"
+        "header header"
         "main aside"
         "footer footer";
+    color: #013006;
 }
 
 header {
-    background-color: blue;
+    background: no-repeat center/100% url(media//img//banner4.jpeg);
     color: white;
     padding: 20px;
     grid-area: header;
 }
 
 nav {
-    background-color: yellow;
+    background-color: #014e2edd;
     grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0;
 }
 
 main {
-    background-color: darkblue;
-    color: white;
+    background-color: white;
+    background-image: url(media//img//mainBG2.png);
+    background-size: 250px;
+    background-repeat: repeat;
     grid-area: main;
 }
 
 aside {
-    background-color: lightgreen;
+    background-color: #014e2e;
     grid-area: aside;
 }
 
@@ -39,7 +45,32 @@ footer {
     grid-area: footer;
 }
 
+h1{
+    color: white;
+}
+
 nav ul{
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
+    width: 100%;
+    margin-right: 10vw;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    width: 10vh;
+    margin-right: 10vw;
 }
